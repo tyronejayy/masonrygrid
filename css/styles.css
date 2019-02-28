@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    overflow: hidden;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    width: 768px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.grid-container span {
+    justify-content: center;
+    align-items: center;
+    min-height: 15vw;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.grid-container div:hover {
+    font-size: 3vw;
+}
+
+.grid-container span:hover {
+    transform: scale(1.06);
+
+}
+
+.item-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.item-2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item-3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.item-8 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.item-9 {
+    grid-area: 4/1/4/3;
+}
+
+.item-10 {
+    grid-area: 1/4/1/5;
+}
+
+.item-11 {
+    grid-area: 4/4/6/5;
+}
+
+.item-15 {
+    grid-area: 7/3/9/5;
+}
+
+.item-17 {
+    grid-row: 8/10;
+}
+
+
+.item-20 {
+    grid-area: 11/1/12/3;
+}
+
+.item-21 {
+    grid-row: 9/11;
+}
+
+.item-22 {
+    grid-area: 10/3/12/4;
+}
+
+.item-23 {
+    grid-area: 10/4/12/5;
+}
+/* ================================================*/
+
+.item-1 span {
+    background-image: url("../img/john-paul.jpg");
+    background-position-y: -10px;
+}
+.item-2 span {
+    background-image: url("../img/daniel.jpg");
+}
+
+.item-3 span {
+    background-image: url("../img/evan.jpg");
+}
+
+.item-4 span {
+    background-image: url("../img/gcobisa.jpg");
+}
+
+.item-5 span {
+    background-image: url("../img/miguel.jpg");
+}
+
+.item-6 span {
+    background-image: url("../img/marlon.jpg");
+}
+
+.item-7 span {
+    background-image: url("../img/reagan.JPG");
+}
+
+.item-8 span {
+    background-image: url("../img/taufeeq.jpg");
+    background-position-y: 0;
+}
+
+.item-9 span {
+    background-image: url("../img/natheer.jpg");
+}
+
+.item-10 span {
+    background-image: url("../img/taariq.jpg");
+}
+
+.item-11 span {
+    background-image: url("../img/zainab.jpg");
+}
+
+.item-12 span {
+    background-image: url("../img/josh.png");
+}
+
+.item-13 span {
+    background-image: url("../img/michael.jpeg");
+}
+
+.item-14 span {
+    background-image: url("../img/jessie.jpeg");
+}
+
+.item-15 span {
+    background-image: url("../img/gedeon.jpg");
+}
+
+.item-16 span {
+    background-image: url("../img/urick.jpg");
+}
+
+.item-17 span {
+    background-image: url("../img/shanton.jpg");
+}
+
+.item-18 span {
+    background-image: url("../img/shakeel.jpg");
+}
+
+.item-19 span {
+    background-image: url("../img/ashton.jpg");
+}
+
+.item-20 span {
+    background-image: url("../img/warnita.jpg");
+}
+
+.item-21 span {
+    background-image: url("../img/sheldon.jpg");
+}
+
+.item-22 span {
+    background-image: url("../img/kaylem.jpg");
+}
+
+.item-23 span {
+    background-image: url("../img/litha.jpg");
+}
+
+.item-24 span {
+    background-image: url("../img/tyrone.jpg");
+}
+
+
+@media (max-width: 768px) {
+    .grid-container {
+        width: 98%;
+    }
+}
